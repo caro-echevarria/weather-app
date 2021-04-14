@@ -1,0 +1,22 @@
+.card {
+  margin: 20px;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+h1 {
+  color: blue;
+}
+
+h1,
+h4,
+h5 {
+  text-align: center;
+}
+
+.forecast {
+  text-align: center;
+}
+
+i {
+  color: white;
+}

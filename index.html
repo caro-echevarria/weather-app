@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/06 Multiple Files.css" />
+    <script src="https://kit.fontawesome.com/fcabed939c.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title">Weather App</h1>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-12">
+                <form id="search-form">
+                  <input type="search" placeholder="Enter Your City Here" id="city-input" />
+                  <button type="submit" class="btn btn-outline-primary" id="btn">
+                     Search
+                  </button>
+                  <button id="current-location-button" type="button" class="btn btn-outline-primary">
+                     <i class="fas fa-location-arrow" id="arrow-button"></i>
+                  </button> 
+                 </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+              <h4 id="city"></h4>
+              <h5>
+                <span id="temp"></span>°C 
+                <br />
+                <span id="description"></span>
+              </h5>
+            </div>
+            <div class="col-4">
+              <p class="date" id="current-day">
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="conditions">
+              Humidity: <span id="humidity"></span> %
+              <br />
+              Wind: <span id="wind"></span> km/h
+              </p>
+            </div>
+          </div>
+
+          <hr />
+
+          <h4>Weather Forecast</h4>
+          <span class="forecast">
+          <div class="row">
+            <div class="col-2">
+              Fri
+              <br />
+              <i class="fas fa-cloud-sun"></i>
+              <br>
+              29°C
+            </div>
+            <div class="col-2">
+              Sat
+              <br />
+              <i class="fas fa-sun"></i>
+              <br>
+              29°C
+            </div>
+            <div class="col-2">
+              Sun
+              <br>
+              <i class="fas fa-cloud-sun"></i>
+              <br>
+              30°C
+            </div>
+            <div class="col-2">
+              Mon
+              <br /> 
+              <i class="fas fa-sun"></i>
+              <br>
+              28°C
+            </div>
+            <div class="col-2">
+              Tue
+              <br />
+              <i class="fas fa-cloud-sun-rain"></i>
+              <br>
+              29°C
+            </div>
+            <div class="col-2">
+              Wed
+              <br>
+              <i class="fas fa-cloud-sun"></i>
+              <br />
+              29°C
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+    </div>
+    <script src="src/06 Multiple Files.js"></script>
+  </body>
+</html>
